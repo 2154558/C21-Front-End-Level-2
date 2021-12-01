@@ -5,46 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--hier een link naar de stylesheet, style.css-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--hier een link naar script.js -->
-    <script src="js/script.js" defer></script>
-    <!-- waarom gebruiken we hier het attribute defer? als je defer gebruikt krijg je betere preformance en vind de browser je script eerder vul je antwoord in op de lijn--->
+    <script src="javascript/functions.js" defer></script>
 </head>
 <body>
-
     <div>
-        <button onclick="getName('vul je naam in hier, echt doen!');">klik op de button</button> 
-        <!-- vul eens je eigen naam in waar nu staat: vul je naam in hier, echt doen!, wat gebeurd er dan? niks, ik heb nergens om mijn naam in te vullen vul je antwoord in op de lijn -->
+        <div>
+            <button onclick="getElementById('logo_1').innerHTML =  4">logo 1</button>
+            <button onclick="getElementById('logo_2').innerHTML =  2">logo 2</button>
+            <button onclick="document.querySelector('.logo_3').innerHTML = 25 ">logo 3</button>
+            <button onclick="document.querySelector('.logo_4').innerHTML =  64 ">logo 4</button>
+        </div>
+        <div> 
+            <p id="logo_1" > 2 x 2</p>
+            <p id="logo_2" > 4 x 4</p>
+            <p class="logo_3" > 5 x 5</p>
+            <p class="logo_4" > 8 x 8</p>
+        </div>
     </div>
-
-    <div>
-        <p>Klik een paar keer op het plaatje hieronder</p>
-        <img id="hide" onclick="hideMe();" src="images/item-1.png">
-        <!-- Welke functie wordt hierboven aangeroepen? onclick en dan word het plaatje vervangen door een andere vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
-        <img id="show" onclick="show();" src="images/item-2.png">
-        <!-- Welke functie wordt hierboven aangeroepen? onclick en dan word het plaatje vervangen door een andere  vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
-    </div>
-
-    <div>
-        <p class="som">als ik op de button hieronder klik wat is hier dan de tekst?</p>
-        <!-- wat wordt de content van de p hierboven als ik op de button hieronder klik? de tekst veranderd in 8 vul je antwoord in op de lijn-->
-        <button onclick="rekenen(5);">Bereken, klik op mij!</button>
-        <!-- Welke functie wordt hierboven aangeroepen? onclick, op de onclick veranderd de <p> vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
-        <!-- wat gebeurd er als je het getal 5 hierboven in een ander getal verandert, probeer dat eens  (refresh wel even je pagina). __________________ vul je antwoord in op de lijn -->
-    </div>
-
-    <div>
-        <p onclick="this.style.color='aqua';">Klik op mij!</p> 
-        <!-- wordt hier een functie aangeroepen? ja vul ja of nee op de lijn in-->
-        <!-- wat gebeurd er met de tekst in het element p? de css veranderd, naar de kleur aqua vul je antwoord in op de lijn -->
-    </div>
-
-    <div>
-        <p onclick="setColor(this, 'orange', '30;px');">Klik ook op mij!</p> 
-        <!-- wordt hier een functie aangeroepen? ja vul ja of nee op de lijn in-->
-        <!-- wat gebeurd er als ik px vergeet bij 30px (probeer het eens) dan blijft het dezelfde grootte vul je antwoord in op de lijn -->
-    </div>
-    
 </body>
+
+
+
+
+
 </html>
