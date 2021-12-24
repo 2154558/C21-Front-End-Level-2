@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+}
+
+
+html{
+    font-family: 'source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #5a5150;
+    line-height: 1.8;
+}
+
+body{
+    background-color: #cccccc;
+}
+
+.wrapper{
+    background-color:white;
+    margin:0 auto;
+    max-width: 1795px;
+
+}
+
+header{
+    height: 90px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    padding:0 40 px;
+    margin-bottom: 40px;
+}
+
+
+
+ul.main-menu{
+    list-style: none;
+    color: #4e4b4b
+}
+
+ul.socials{
+    list-style: none;
+    color: #4e4b4b
+}
+
+li.menu-item a{
+    color: #4e4b4b;
+}
+li.menu-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+li.menu-item a:hover{
+    color: #ca404f;
+}
+
+li.socials-item a{
+    color: #4e4b4b;
+}
+li.socials-item a:hover{
+    color: #ca404f;
+}
+
+main{
+    padding: 0 100px 0 100px;
+}
+
+.recepten{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.description{
+    width: 485px;
+    margin-right: 70px;
+}
+
+.description h4{
+    margin-top: 15px;
+}
+
+.description p{
+    margin: 60px 0
+}
+
+.recept-image img{
+    width: 485px;
+}
+
+.recept{
+    display: flex;
+    width: 1040px;
+}
+
+.recept-items{
+    width: 485px;
+}
+
+.recept-items .item{
+    display: grid;
+    grid-template-columns: auto 100px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+}
+
+.recept-items .item:hover{
+    background-color: #eaeaea;
+    padding-left: 10px;
+}
+
+h2{
+    font-family: 'karla', sans-serrif;
+    font-size: 40px;
+    color: #4e4b4b;
+    line-height: 1.2;
+}
+
+h3{
+    font-family: 'karla', sans-serrif;
+    font-size: 16px;
+    color: #4e4b4b;
+    line-height: 1.2;
+}
+
+h4{
+    font-family: 'karla', sans-serrif;
+    font-size: 16px;
+    color: #919291;
+    line-height: 1.4;
+}
+
+a{
+    font-family: 'karla', sans-serrif;
+    font-size: 14px;
+    color: #ca404f;
+    line-height: 1.4;
+}
+
+button{
+    font-family: 'karla', sans-serrif;
+    font-size: 16px;
+    color: white;
+    line-height: 42px;
+    background-color: #ca404f;
+}
+
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
